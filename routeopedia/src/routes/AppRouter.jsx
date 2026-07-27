@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import NotFound from "../pages/NotFound";
-import ProductList from "../pages/product/ProductList";
 import ProductDetail from "../pages/product/ProductDetail";
 import ProductLayout from "../layouts/ProductLayout";
 import AllProduct from "../pages/product/productCategory/AllProduct";
