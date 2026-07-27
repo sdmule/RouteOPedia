@@ -1,4 +1,5 @@
 import MainLayout from "./layouts/MainLayout";
+import AppRouter from "./routes/AppRouter";
 
 function App() {
   return (
@@ -6,7 +7,7 @@ function App() {
       <div className="d-flex flex-column min-vh-100">
         <MainLayout />
         <main className="container flex-grow-1 d-flex flex-column">
-          CONTENT
+          <AppRouter />
         </main>
         <footer
           className="mt-auto py-3 border-top text-center text-muted"
