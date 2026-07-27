@@ -1,8 +1,12 @@
+import ProductList from "../ProductList";
+
 function AllProduct() {
   return (
-    <div>
-      <h1>All Products</h1>
-    </div>
+    <ProductList
+      filterType="all"
+      title="All Products"
+      description="Complete Product Catalog:"
+    />
   );
 }
 
