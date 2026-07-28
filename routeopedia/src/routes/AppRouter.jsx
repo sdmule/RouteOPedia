@@ -8,6 +8,9 @@ import AllProduct from "../pages/product/productCategory/AllProduct";
 import Electronics from "../pages/product/productCategory/Electronics";
 import Clothing from "../pages/product/productCategory/Clothing";
 import Books from "../pages/product/productCategory/Books";
+import Login from "../pages/auth/Login";
+import AdminPortal from "../pages/admin/AdminPortal";
+import CustomerPortal from "../pages/customer/CustomerPortal";
 
 function AppRouter() {
   return (
@@ -21,6 +24,9 @@ function AppRouter() {
         <Route path="books" element={<Books />} />
       </Route>
       <Route path="/products/item/:id" element={<ProductDetail />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/admin" element={<AdminPortal />} />
+      <Route path="/customer" element={<CustomerPortal />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
