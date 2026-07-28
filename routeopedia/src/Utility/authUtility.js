@@ -29,4 +29,21 @@ function setAuthState(auth, user = null) {
   }
 }
 
-export { setAuthState, getAuthState };
+function hasRoles(role) {
+  return currentUser?.role === role;
+}
+
+function hasAnyRoles(roles) {
+  return roles.includes(currentUser?.role);
+}
+
+function logout() {
+  setAuthState(false, null);
+  try {
+    sessionStorage.removeItem("demoAuth");
+  } catch (e) {
+    console.log("Could not clear the auth data");
+  }
+}
+
+export { setAuthState, getAuthState, hasRoles, hasAnyRoles, logout };
